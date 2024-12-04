@@ -1,65 +1,95 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Body Styling */
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #282c34;
-    color: #ffffff;
+    background-color: #f4f4f9;
 }
 
+/* Container Styling */
 .container {
-    background: #3a3f4b;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
     text-align: center;
-    width: 90%;
-    max-width: 500px;
 }
 
+/* Heading Styles */
 h1 {
+    font-size: 24px;
     margin-bottom: 20px;
+    color: #4a90e2;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #4a90e2;
 }
 
-input {
-    width: calc(100% - 20px);
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"] {
     padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #4a90e2;
     outline: none;
 }
 
+/* Buttons */
 .buttons {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
 }
 
 button {
-    width: 48%;
-    padding: 10px;
-    background: #007bff;
+    padding: 10px 20px;
     border: none;
-    color: white;
-    border-radius: 5px;
+    background: #4a90e2;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #357ab8;
 }
 
+/* Output Styling */
 #output {
+    margin-top: 10px;
     font-size: 18px;
-    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
     word-wrap: break-word;
 }
